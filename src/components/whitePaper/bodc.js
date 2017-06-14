@@ -1,0 +1,2 @@
+const bodc = 'The Board of Directors smart contract (BODC) is the only mechanism to interact / influence the Jibrel Decentral Bank Contract.\n\nBODC will be managed through a voting system, where members of the board can use their Ethereum accounts to vote on BODC actions. Storing and using private keys will be the responsibility of members. Ideally, the board will be composed of crypto thought-leaders and financial services experts.'
+export default bodc

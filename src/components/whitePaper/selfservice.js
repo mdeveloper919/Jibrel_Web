@@ -1,0 +1,2 @@
+const selfservice = 'Once the technological limitations such as on-chain computational capability and unfeasible zero-knowledge proofs; as well as the regulatory hurdles of obtaining the relevant licensing, are overcome, jibrel could operate self-service portals (i.e. traditional exchange platforms hosted on-chain, communicating with the jibrel network). \n\nThe build-out of these portals is critical to jibrel achieving full decentralization.'
+export default selfservice

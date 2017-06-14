@@ -1,0 +1,153 @@
+.normal {
+  width: 100%;
+}
+.road_normal {
+  color: #d3d3d3;
+  font-family: "Lato";
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  display: inline-block;}
+.road_normal h1 {
+  margin-top: 3em;
+  font-size: 34px;
+  color: #1155cc;
+  font-weight: 300;
+}
+.road_normal p {
+  margin-top: 0.5em;
+  font-size: 20px;
+  color: #b7b7b7;
+  font-weight: 300;
+}
+img {
+  width: 25px;
+  height: auto;
+  margin: auto;
+}
+.img_gray {
+  width: 25px;
+  height: auto;
+  margin: auto;
+  opacity: 0.3;
+}
+.img_div {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  border: 1px solid #1155cc;
+  display: flex;
+  margin: auto;
+}
+.img_div_gray {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  margin: auto;
+}
+.ver_div {
+  display: table;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.hor_line_div {
+  width: 1px;
+  height: 82.5px;
+  border-right: 1px dashed #1155cc;
+  display: flex;
+  margin: auto;
+}
+.hor_line_div_gray {
+  width: 1px;
+  height: 82.5px;
+  border-right: 1px dashed #d3d3d3;
+  display: flex;
+  margin: auto;
+}
+.ver_line_div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ver_line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #1155cc;
+  display: block;
+  vertical-align: middle;
+}
+.ver_line_gray {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #d3d3d3;
+  display: block;
+  vertical-align: middle;
+}
+.table {
+  width: 100%;
+}
+.table tr {
+  height: 200px;
+}
+.td_1 {
+  width: 40%;
+}
+.td_2 {
+  width: 20%;
+  vertical-align: middle;
+  margin: auto;
+}
+.td_3 {
+  width: 40%;
+}
+.right_div_1 {
+  display: table-cell;
+  border: 1px dashed #1155cc;
+  padding: 0.5em;
+}
+.right_div_1_gray {
+  display: table-cell;
+  border: 1px dashed #d3d3d3;
+  padding: 0.5em;
+}
+.text_div_1 {
+  color: #1155cc;
+  line-height: 1em;
+  margin-top: 0.5em;
+  font-size: 14px;
+  font-weight: 300
+}
+.text_div_1_gray {
+  color: grey;
+  line-height: 1em;
+  margin-top: 0.5em;
+  font-size: 14px;
+  font-weight: 300
+}
+.text_div_2 {
+  color: grey;
+  margin-top: 1em;
+  line-height: 1em;
+  font-size: 14px;
+  font-weight: 300
+}
+
+
+.td_1_sub {
+  width: 47%;
+}
+.td_2_sub {
+  width: 6%;
+}
+.td_3_sub {
+  width: 47%;
+}
+.line_div {
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+}
