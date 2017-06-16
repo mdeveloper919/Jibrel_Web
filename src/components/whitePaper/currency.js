@@ -1,2 +1,2 @@
-const currency = 'Each asset registered with the JDB will have a CryDR issued in the form of a smart contract. CryDR smart'
+const currency = 'With the underlying tokens, jibrel can provide a currency API that allows users to convert freely between currencies.'
 export default currency

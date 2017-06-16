@@ -57,7 +57,7 @@ class RoadMap extends React.Component {
             <div className="road_normal" style={{width: this.state.windowWidth <= 1200 ? window.innerWidth*9/10 : 1100}}>
               <h1 style={{fontSize: this.state.windowWidth <= 1000 ? 30 : 42}}>IMPLEMENTATION ROADMAP</h1>
               <p style={{fontSize: this.state.windowWidth <= 1000 ? 16 : null}}>High-level strategic and implementation roadmap</p>
-              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Is something unclear?<br/>Email us at <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>questions@jibrel.network</p></p>
+              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Is something unclear?<br/>Email us at <a href="mailto:questions@jibrel.network"><p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>questions@jibrel.network</p></a></p>
               <table className="table">
                 <tr>
                   <td className="td_1">

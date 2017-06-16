@@ -50,6 +50,7 @@ import Crossborder from './crossborder'
 import Currency from './currency'
 import Merchant from './merchant'
 import Uniwallet from './uniwallet'
+import Refer from './refer'
 
 
 
@@ -103,7 +104,7 @@ class WhitePaper extends React.Component {
             <div className="white_normal" style={{width: this.state.windowWidth <= 1200 ? window.innerWidth*9/10 : 1100}}>
               <h1 style={{fontSize: this.state.windowWidth <= 1000 ? 30 : 42}}>JIBREL NETWORK</h1>
               <p style={{fontSize: this.state.windowWidth <= 1000 ? 16 : null}}>A network to trade and store traditional financial assets on the blockchain</p>
-              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Download the <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#1155cc', cursor: 'pointer'}}>PDF Version</p></p>
+              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Download the <a href="https://github.com/Yazan24/jibrelweb/raw/gh-pages/whitepaper.pdf" download="whitepaper"><p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>PDF Version</p></a></p>
               <li className="abstract" style={{marginTop: 20, marginBottom: 20, fontWeight: 700, color: '#d3d3d3', width: '100%', textAlign: 'center'}}>ABSTRACT</li>
               <div style={{width: '100%', textAlign: 'center'}}>
               {Abstract.split("\n").map(i => {
@@ -415,6 +416,12 @@ class WhitePaper extends React.Component {
 
               {Merchant.split("\n").map(i => {
                   return <li className="title_p">{i}</li>;
+              })}
+
+              <h1 style={{fontSize: this.state.windowWidth <= 1000 ? 26 : null}}>8. REFERENCES</h1>
+
+              {Refer.split("\n").map(i => {
+                  return <li className="refer_p">{i}</li>;
               })}
 
 

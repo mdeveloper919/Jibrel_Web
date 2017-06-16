@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import Images from './images'
 import './mainView.css'
 
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import SubscribeForm from './subscribe'
 
-import Autocomplete from './Autocomplete'
-import { getStates, matchStateToTerm, sortStates, styles } from './utils'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
@@ -31,25 +30,25 @@ class MainView extends React.Component {
               {
                 icon : Images.investor,
                 title: "Investors",
-                sub_title: "Low Risk Indirect Crypto-investment",
-                description: "Investors gain indirect access to the high-returns of the emerging cryptoeconomy without the risk"
+                sub_title: "Low Risk Crypto-investment",
+                description: "Gain indirect access to the high-returns of the cryptoeconomy without the risk by selling real assets on-chain"
               },
               {
                 icon : Images.dao,
-                title: "Decentralized Organizations",
+                title: "Decentralized Orgs",
                 sub_title: "Crypto-hedging with Backed Tokens",
-                description: "Decentralized organizations and funds can store funding or hedge using asset-backed ERC-20 tokens"
+                description: "Store ICO funding safely on-chain or hedge into more stable assets using traditional asset-backed ERC-20 tokens (CryDRs)"
               },
               {
                 icon : Images.merchant,
                 title: "Business & Merchants",
-                sub_title: "Global Payments Platform / Solution",
-                description: "Business and merchants can set-up global payment channels in minutes, no exchange fees, no transfer fees"
+                sub_title: "Global Payments Solution",
+                description: "Merchants and SMEs can Set-up global payment channels in minutes, no exchange fees, no transfer fees"
               },
               {
                 icon : Images.users,
                 title: "End-Users",
-                sub_title: "Poca(Proof-of-Capital) Wallet",
+                sub_title: "Poca (Proof-of-Capital) Wallet",
                 description: "Our universal wallet allows anyone to send or receive money anywhere in any currency, with no fees"
               },
               {
@@ -88,7 +87,7 @@ class MainView extends React.Component {
           }
         });
 
-        var countDownDate = new Date("Jul 17, 2017 12:00:00").getTime();
+        var countDownDate = new Date("Aug 10, 2017 12:00:00").getTime();
 
         var x = setInterval(() => {
 
@@ -122,16 +121,16 @@ class MainView extends React.Component {
     }
 
     iconView(){
-      return <div className="icon_div" style={{width: this.state.windowWidth >= 1200 ? 1100 : '80%'}}>
-        <img src={Images.a_data_pro}/>
-        <img src={Images.c_contentfw}/>
-        <img src={Images.cision}/>
-        <img src={Images.corporate_excellence}/>
-        <img src={Images.data_scouting}/>
-        <img src={Images.cision}/>
-        <img src={Images.corporate_excellence}/>
+    //  return <div className="icon_div" style={{width: this.state.windowWidth >= 1200 ? 1100 : '80%'}}>
+        // <img src={Images.a_data_pro}/>
+        // <img src={Images.c_contentfw}/>
+        // <img src={Images.cision}/>
+        // <img src={Images.corporate_excellence}/>
+        // <img src={Images.data_scouting}/>
+        // <img src={Images.cision}/>
+        // <img src={Images.corporate_excellence}/>
 
-      </div>
+  //    </div>
     }
 
     handleChangeIndex = (index) => {
@@ -142,9 +141,9 @@ class MainView extends React.Component {
 
     slide1(){
       if(this.state.windowWidth <= 1100) {
-        return <div className="slide_div" style={{width: '100%', marginTop: this.state.windowWidth >= 700 ? null : 155}}>
+        return <div className="slide_div" style={{width: '100%', marginTop: this.state.windowWidth >= 700 ? null : 155, height: this.state.windowWidth <= 700 && 380}}>
           <div style={{position: 'relative', margin: 'auto', fontSize: 15, fontWeight: 300, color: '#ffffff',  width: this.state.windowWidth >= 700 ? 600 : '90%', height: this.state.windowWidth >= 700 ? 60 : '18%', marginTop: 15}}>the jibrel network allows anyone to digitize, list, trade and sell traditional assets, such as currencies, bonds and other instruments, on-chain</div>
-          <img src={Images.macbookjibrel} style={{width: this.state.windowWidth <= 600 && '90%', height: this.state.windowWidth <= 600 && window.innerWidth/2}}/>
+          <img src={Images.macbookjibrel} style={{width: this.state.windowWidth <= 700 && 350, height: this.state.windowWidth <= 700 && 'auto'}}/>
         </div>
       }else{
         return <div className="slide_div">
@@ -155,10 +154,10 @@ class MainView extends React.Component {
     }
 
     slide2(){
-      if(this.state.windowWidth <= 1000) {
-        return <div className="slide_div" style={{width: '100%', marginTop: this.state.windowWidth >= 700 ? null : 155}}>
+      if(this.state.windowWidth <= 1100) {
+        return <div className="slide_div" style={{width: '100%', marginTop: this.state.windowWidth >= 700 ? null : 155, height: this.state.windowWidth <= 700 && 380}}>
           <div style={{position: 'relative', margin: 'auto', fontSize: 15, fontWeight: 300, color: '#ffffff',  width: this.state.windowWidth >= 700 ? 600 : '90%', height: this.state.windowWidth >= 700 ? 60 : '18%', marginTop: 15}}>users can deposit cash, money market instruments or create their own Crypto Depository Receipts(CryDRs) and benefit from <i>on-chain / off-chain arbitrage</i></div>
-          <img src={Images.iphonejibrel} style={{width: this.state.windowWidth <= 600 && '90%', height: this.state.windowWidth <= 600 && window.innerWidth/2}}/>
+          <img src={Images.iphonejibrel} style={{width: this.state.windowWidth <= 700 && 350, height: this.state.windowWidth <= 700 && 'auto'}}/>
         </div>
       }else{
         return <div className="slide_div">
@@ -169,10 +168,10 @@ class MainView extends React.Component {
     }
 
     slide3(){
-      if(this.state.windowWidth <= 1000) {
-        return <div className="slide_div" style={{width: '100%', marginTop: this.state.windowWidth >= 700 ? null : 140}}>
+      if(this.state.windowWidth <= 1100) {
+        return <div className="slide_div" style={{width: '100%', marginTop: this.state.windowWidth >= 700 ? null : 155, height: this.state.windowWidth <= 700 && 380}}>
           <div style={{position: 'relative', margin: 'auto', fontSize: 15, fontWeight: 300, color: '#ffffff',  width: this.state.windowWidth >= 700 ? 600 : '90%', height: this.state.windowWidth >= 700 ? 60 : '18%', marginTop: 15}}>decentralized organizations and funds that are overexposed in digital currencies can hedge their positions with money market tokens</div>
-          <img src={Images.browserjibrel} style={{width: this.state.windowWidth <= 600 && '70%', height: this.state.windowWidth <= 600 && window.innerWidth/2}}/>
+          <img src={Images.browserjibrel} style={{width: this.state.windowWidth <= 700 && 300, height: this.state.windowWidth <= 700 && 'auto'}}/>
         </div>
       }else{
         return <div className="slide_div">
@@ -199,46 +198,46 @@ class MainView extends React.Component {
     }
 
     bankingView(){
-      if(this.state.windowWidth <= 1000) {
-        return <div className="banking_view" style={{height: 'auto'}}>
-              <li className="title_li" style={{fontSize: 20}}>Consumer Banking</li>
-              <li className="subtitle_li" style={{fontSize: 16}}>(Individuals)</li>
-              <li className="desciption_li">We're helping everyone leverage the power of blockchain technology, without the risk - your money, in every currency, everywhere - no fees, ever</li>
-              <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: window.innerWidth*6/10}}><li>POCA WALLET</li></div>
-
-              <li className="title_li" style={{fontSize: 20}}>Corporate Banking</li>
-              <li className="subtitle_li" style={{fontSize: 16}}>(Businesses)</li>
-              <li className="desciption_li">Manage your global payables and receivables without the unnecessary costs and high fees, send or receive money from anywhere, without the fees</li>
-              <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: window.innerWidth*6/10}}><li>POCA BUSINESS</li></div>
-
-              <li className="title_li" style={{fontSize: 20}}>Crypto-Banking</li>
-              <li className="subtitle_li" style={{fontSize: 16}}>(DAOs)</li>
-              <li className="desciption_li">Protect your project funding buy opening a money market account - invest in certificates of deposits to ensure your funding is protected from volatility</li>
-              <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: window.innerWidth*6/10, marginBottom: '5%'}}><li>POCA CRYPTO</li></div>
-
-          </div>
-      }else{
-        return <div className="banking_view" style={{width: this.state.windowWidth >= 1200 ? 1100 : '90%'}}>
-            <div className="inner_div">
-              <li className="title_li" style={{fontSize: 20}}>Consumer Banking</li>
-              <li className="subtitle_li" style={{fontSize: 16}}>(Individuals)</li>
-              <li className="desciption_li">We're helping everyone leverage the power of blockchain technology, without the risk - your money, in every currency, everywhere - no fees, ever</li>
-              <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: 250}}><li>POCA WALLET</li></div>
-            </div>
-            <div className="inner_div">
-              <li className="title_li" style={{fontSize: 20}}>Corporate Banking</li>
-              <li className="subtitle_li" style={{fontSize: 16}}>(Businesses)</li>
-              <li className="desciption_li">Manage your global payables and receivables without the unnecessary costs and high fees, send or receive money from anywhere, without the fees</li>
-              <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: 250}}><li>POCA BUSINESS</li></div>
-            </div>
-            <div className="inner_div">
-              <li className="title_li" style={{fontSize: 20}}>Crypto-Banking</li>
-              <li className="subtitle_li" style={{fontSize: 16}}>(DAOs)</li>
-              <li className="desciption_li">Protect your project funding buy opening a money market account - invest in certificates of deposits to ensure your funding is protected from volatility</li>
-              <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: 250}}><li>POCA CRYPTO</li></div>
-            </div>
-          </div>
-      }
+    //   if(this.state.windowWidth <= 1000) {
+    //     return <div className="banking_view" style={{height: 'auto'}}>
+    //           <li className="title_li" style={{fontSize: 20}}>Consumer Banking</li>
+    //           <li className="subtitle_li" style={{fontSize: 16}}>(Individuals)</li>
+    //           <li className="desciption_li">We're helping everyone leverage the power of blockchain technology, without the risk - your money, in every currency, everywhere - no fees, ever</li>
+    //           <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: window.innerWidth*6/10}}><li>POCA WALLET</li></div>
+    //
+    //           <li className="title_li" style={{fontSize: 20}}>Corporate Banking</li>
+    //           <li className="subtitle_li" style={{fontSize: 16}}>(Businesses)</li>
+    //           <li className="desciption_li">Manage your global payables and receivables without the unnecessary costs and high fees, send or receive money from anywhere, without the fees</li>
+    //           <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: window.innerWidth*6/10}}><li>POCA BUSINESS</li></div>
+    //
+    //           <li className="title_li" style={{fontSize: 20}}>Crypto-Banking</li>
+    //           <li className="subtitle_li" style={{fontSize: 16}}>(DAOs)</li>
+    //           <li className="desciption_li">Protect your project funding buy opening a money market account - invest in certificates of deposits to ensure your funding is protected from volatility</li>
+    //           <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: window.innerWidth*6/10, marginBottom: '5%'}}><li>POCA CRYPTO</li></div>
+    //
+    //       </div>
+    //   }else{
+    //     return <div className="banking_view" style={{width: this.state.windowWidth >= 1200 ? 1100 : '90%'}}>
+    //         <div className="inner_div">
+    //           <li className="title_li" style={{fontSize: 20}}>Consumer Banking</li>
+    //           <li className="subtitle_li" style={{fontSize: 16}}>(Individuals)</li>
+    //           <li className="desciption_li">We're helping everyone leverage the power of blockchain technology, without the risk - your money, in every currency, everywhere - no fees, ever</li>
+    //           <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: 250}}><li>POCA WALLET</li></div>
+    //         </div>
+    //         <div className="inner_div">
+    //           <li className="title_li" style={{fontSize: 20}}>Corporate Banking</li>
+    //           <li className="subtitle_li" style={{fontSize: 16}}>(Businesses)</li>
+    //           <li className="desciption_li">Manage your global payables and receivables without the unnecessary costs and high fees, send or receive money from anywhere, without the fees</li>
+    //           <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: 250}}><li>POCA BUSINESS</li></div>
+    //         </div>
+    //         <div className="inner_div">
+    //           <li className="title_li" style={{fontSize: 20}}>Crypto-Banking</li>
+    //           <li className="subtitle_li" style={{fontSize: 16}}>(DAOs)</li>
+    //           <li className="desciption_li">Protect your project funding buy opening a money market account - invest in certificates of deposits to ensure your funding is protected from volatility</li>
+    //           <div className="slide_button" style={{display: 'inline-block', marginTop: 15, width: 250}}><li>POCA CRYPTO</li></div>
+    //         </div>
+    //       </div>
+    //   }
     }
 
     countDownTimer(){
@@ -246,7 +245,7 @@ class MainView extends React.Component {
       if(this.state.windowWidth <= 1000) {
         return <div className="count_view">
               Fundraiser
-              <div style={{position: 'relative', margin: 'auto', fontSize: 24, fontWeight: 100, color: '#000000'}}>Our fundraiser starts on <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>July 17, 2017</li> at <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>12:00PM GMT</li></div>
+              <div style={{position: 'relative', marginLeft: 40, marginRight: 40, fontSize: 24, fontWeight: 100, color: '#000000'}}>Our fundraiser starts on <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>August 10, 2017</li> at <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>12:00PM GMT</li></div>
               <div className="about_div" style={{marginTop: 25}}>
                 <div className="member_div_mobile" style={{fontFamily: 'Courier New', fontSize: 90}}>
                   {this.state.days}
@@ -277,7 +276,7 @@ class MainView extends React.Component {
       }else{
         return <div className="count_view" style={{width: this.state.windowWidth >= 1200 ? 1100 : '90%'}}>
               Fundraiser
-              <div style={{position: 'relative', margin: 'auto', fontSize: 24, fontWeight: 100, color: '#000000'}}>Our fundraiser starts on <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>July 17, 2017</li> at <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>12:00PM GMT</li></div>
+              <div style={{position: 'relative', margin: 'auto', fontSize: 24, fontWeight: 100, color: '#000000'}}>Our fundraiser starts on <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>August 10, 2017</li> at <li style={{display: 'inline-block', color: '#000000', fontWeight: 300}}>12:00PM GMT</li></div>
               <div className="about_div" style={{marginTop: 25}}>
                 <div className="member_div" style={{fontFamily: 'Courier New', fontSize: 90}}>
                   {this.state.days}
@@ -308,63 +307,21 @@ class MainView extends React.Component {
       }
     }
 
-    setEmail(value){
-      this.setState({ value })
-      if(value == ''){
-        this.setState({ flag: 0 })
-      }
+    handleChange(event){
+      let email = event.nativeEvent.text;
+      this.setState({email})
     }
 
     emailPart(){
+      const action = "//network.us16.list-manage.com/subscribe/post?u=c183c6fd5297d1abedae2421f&id=ea106174e5"
+
       if(this.state.windowWidth <= 1000) {
         return <div className="email_view">
-              <div style={{marginBottom: 25, color: this.state.flag == 1 && '#2CB186'}}>{this.state.flag == 0 ? 'Sign-up for fundraiser updates' : "Thanks for signing-up. We'll keep you posted!"}</div>
-              <div className="email-box">
-                <Autocomplete
-                  value={this.state.value}
-                  inputProps={{ id: 'states-autocomplete' }}
-                  items={getStates()}
-                  getItemValue={(item) => item.name}
-                  shouldItemRender={matchStateToTerm}
-                  sortItems={sortStates}
-                  onChange={(event, value) => this.setEmail(value)}
-                  onSelect={value => this.setState({ value, flag: 1 })}
-                  renderItem={(item, isHighlighted) => (
-                    <div
-                      style={isHighlighted ? styles.highlightedItem : styles.item}
-                      key={item.index}
-                    >{item.name}</div>
-                  )}
-                />
-                <div className="right-box">
-                  <img src={Images.email}/>
-                </div>
-              </div>
+              <SubscribeForm action={action}/>
           </div>
       }else{
         return <div className="email_view" style={{width: this.state.windowWidth >= 1200 ? 1100 : '90%'}}>
-            <div style={{marginBottom: 25, color: this.state.flag == 1 && '#2CB186'}}>{this.state.flag == 0 ? 'Sign-up for fundraiser updates' : "Thanks for signing-up. We'll keep you posted!"}</div>
-            <div className="email-box">
-              <Autocomplete
-                value={this.state.value}
-                inputProps={{ id: 'states-autocomplete' }}
-                items={getStates()}
-                getItemValue={(item) => item.name}
-                shouldItemRender={matchStateToTerm}
-                sortItems={sortStates}
-                onChange={(event, value) => this.setEmail(value)}
-                onSelect={value => this.setState({ value, flag: 1 })}
-                renderItem={(item, isHighlighted) => (
-                  <div
-                    style={isHighlighted ? styles.highlightedItem : styles.item}
-                    key={item.index}
-                  >{item.name}</div>
-                )}
-              />
-              <div className="right-box">
-                <img src={Images.email}/>
-              </div>
-            </div>
+            <SubscribeForm action={action}/>
           </div>
       }
     }
@@ -409,7 +366,7 @@ class MainView extends React.Component {
       if(this.state.windowWidth <= 1000) {
         return <div className="email_view">
               <div style={{marginBottom: 10, color: '#1155cc', fontSize: 40, fontWeight: 300}}>Roadmap</div>
-              <div>High-level Implementation Strategy</div>
+              <div style={{marginBottom: 10}}>High-level Implementation Strategy</div>
               <img src={Images.roadmap} className="roadmap-img"/>
               <div className="roadmap-div">
                 <Link to="/roadMap" style={{textDecoration: 'none'}} onClick={() => scroll.scrollTo(0)}><div className="roadmap-text">VIEW FULL ROADMAP</div></Link>
@@ -430,8 +387,8 @@ class MainView extends React.Component {
     renderNavigation() {
         if(this.state.windowWidth <= 1000) {
             return <div className="normal">
-                      <div className="top-view" style={{height: this.state.windowWidth <= 600 && 550}}>
-                        <div className="title_div" style={{fontSize: this.state.windowWidth >= 700 ? 30 : 26, marginTop: 50}}>the <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>jibrel</li> network</div>
+                      <div className="top-view" style={{height: this.state.windowWidth <= 700 && 580}}>
+                        <div className="mobile_title_div">the <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>jibrel</li> network</div>
                         <div className="button-div">
                           <div className="platform">
                             <div className="platform-text">Platform</div>
@@ -453,14 +410,14 @@ class MainView extends React.Component {
                       {this.roadmap()}
                       <div style={{display: 'inline-block', width: this.state.windowWidth >= 1200 ? 1100 : '90%', height: 1, backgroundColor: '#d3d3d3', marginTop: 30}}/>
                       <h2 style={{fontSize: 24}}>How does the jibrel network work?</h2>
-                      <iframe src="https://player.vimeo.com/video/183530279" width={'90%'} height={window.innerWidth*9/18.3}></iframe>
+                      <iframe src="https://player.vimeo.com/video/221562045" width={'90%'} height={window.innerWidth*9/18.3}></iframe>
                       {this.bankingView()}
                     </div>
             ;
         } else {
             return  <div className="normal">
                       <div className="top-view">
-                        <div className="title_div">the <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>jibrel</li> network</div>
+                        <div className="title-div-1">the <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>jibrel</li> network</div>
                         <div className="button-div">
                           <div className="platform">
                             <div className="platform-text">Platform</div>
@@ -482,7 +439,7 @@ class MainView extends React.Component {
                       {this.roadmap()}
                       <div style={{display: 'inline-block', width: this.state.windowWidth >= 1200 ? 1100 : '90%', height: 1, backgroundColor: '#d3d3d3', marginTop: 30}}/>
                       <h2>How does the jibrel network work?</h2>
-                      <iframe src="https://player.vimeo.com/video/183530279" width={this.state.windowWidth >= 1200 ? 1100 : '90%'} height={this.state.windowWidth >= 1200 ? 620 : window.innerWidth*9/16-70}></iframe>
+                      <iframe src="https://player.vimeo.com/video/221562045" width={this.state.windowWidth >= 1200 ? 1100 : '90%'} height={this.state.windowWidth >= 1200 ? 620 : window.innerWidth*9/16-70}></iframe>
                       {this.bankingView()}
                     </div>
             ;

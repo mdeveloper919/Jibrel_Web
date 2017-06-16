@@ -21,7 +21,7 @@
   align-items: center;
 }
 .slide1_div {
-  background-image: url('../../resources/placeit (2).jpg');
+  background-image: url('../../resources/placeit (2).png');
   background-repeat: no-repeat;
   background-position:  center;
   background-size: cover;
@@ -30,7 +30,7 @@
   height: 700px;
 }
 .slide2_div {
-  background-image: url('../../resources/placeit (4).jpg');
+  background-image: url('../../resources/placeit (4).png');
   background-repeat: no-repeat;
   background-position:  center;
   background-size: cover;
@@ -56,7 +56,7 @@
   display: inline-block;
 }
 .slide3_div {
-  background-image: url('../../resources/placeit (3).jpg');
+  background-image: url('../../resources/placeit (3).png');
   background-repeat: no-repeat;
   background-position:  center;
   background-size: cover;
@@ -75,7 +75,7 @@
 }
 .title_div {
   margin-top: 180px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.4em;
 }
 .icon_view {
@@ -97,4 +97,5 @@
   display: table-cell;
   line-height: 1.4em;
   vertical-align: middle;
+  font-weight: 300
 }

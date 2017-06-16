@@ -1,0 +1,3 @@
+const moneyStorage = 'jibrel aims to be the first implementation of the proof of capital adequacy (PoCA) protocol that allows for storing fiat on the blockchain, with complete decentralization, using existing exchange infrastructure. jibrel will facilitate decentralized global payments and remittances in the form of fiat to fiat transactions that can be undertaken through peer to peer, business to business or consumer to merchant channels. In addition, the jibrel central bank will allow platform users to earn interest on fiat stored in any exchange, indirectly providing much needed liquidity to the digital asset exchange ecosystem.'
+
+export default moneyStorage

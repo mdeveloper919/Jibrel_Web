@@ -11,44 +11,24 @@ class About extends React.Component {
             mobileNavVisible: false,
             team: [
               {
-                icon: 'http://i.imgur.com/z7osRxR.png',
-                name: 'ROBERT H. HOWE',
-                role: 'TECHNICAL ADVISOR',
-                title: 'Founder IBM Global Consulting Services',
-                linkedin: 'https://www.linkedin.com/in/yjkwon',
-                email: 'jae@tendermint.com',
-                slack: '',
-                github: ''
-              },
-              {
-                icon: 'http://i.imgur.com/FG3axoR.png',
-                name: 'OMAR B. MAAYEH',
-                role: 'EXTERNAL LEGAL ADVISOR',
-                title: 'Latham & Watkins - Corporate Law',
-                linkedin: 'https://www.linkedin.com/in/nylira',
-                email: 'peng@tendermint.com',
-                slack: '',
-                github: ''
-              },
-              {
                 icon: 'http://i.imgur.com/dGtsE7A.png',
                 name: 'VICTOR MEZRIN',
                 role: 'TECHNICAL LEAD',
                 title: 'Back-end development, smart-contract dev',
-                linkedin: '',
-                email: 'matt@tendermint.com',
-                slack: 'matt@tendermint.com',
-                github: 'https://github.com/mappum'
+                linkedin: 'https://www.linkedin.com/in/victormezrin',
+                email: 'mailto:victor@jibrel.network',
+                slack: '',
+                github: 'https://github.com/jibreldao'
               },
               {
                 icon: 'http://i.imgur.com/hcOA6d2.png',
                 name: 'YAZAN BARGHUTHI',
                 role: 'STRATEGY LEAD',
                 title: 'Front-end development, business development',
-                linkedin: 'https://www.linkedin.com/in/ashhan',
-                email: 'ashhan@tendermint.com',
-                slack: 'ashhan@tendermint.com',
-                github: ''
+                linkedin: 'https://www.linkedin.com/in/yazanbarghuthi',
+                email: 'mailto:Yazan@jibrel.network',
+                slack: '',
+                github: 'https://github.com/jibreldao'
               }
             ]
         };
@@ -91,7 +71,7 @@ class About extends React.Component {
             <div className="about_normal"  style={{width: this.state.windowWidth <= 1200 ? window.innerWidth*9/10 : 1100}}>
               <h1 style={{fontSize: this.state.windowWidth <= 1000 ? 30 : 42}}>ABOUT US (TEAM)</h1>
               <p style={{fontSize: this.state.windowWidth <= 1000 ? 16 : null}}>Information on the team developing jibrel (qubist labs)</p>
-              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Want to contribute?<br/>Email us at <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>careers@jibrel.network</p></p>
+              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Want to contribute?<br/>Email us at <a href="mailto:careers@jibrel.network"><p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>careers@jibrel.network</p></a></p>
 
               {
                 this.state.windowWidth <= 1000 ? (
@@ -107,16 +87,16 @@ class About extends React.Component {
                             <div className="line"/>
                             <div className="social_div">
                               {
-                                member.linkedin != '' && <img src={Images.linkedin} className="social_icon"/>
+                                member.linkedin != '' && <a href={member.linkedin}><img src={Images.linkedin} className="social_icon"/></a>
                               }
                               {
-                                member.email != '' && <img src={Images.email} className="social_icon"/>
+                                member.email != '' && <a href={member.email}><img src={Images.email} className="social_icon"/></a>
                               }
                               {
                                 member.slack != '' && <img src={Images.slack_symbol} className="social_icon"/>
                               }
                               {
-                                member.github != '' && <img src={Images.github} className="social_icon"/>
+                                member.github != '' && <a href={member.github}><img src={Images.github} className="social_icon"/></a>
                               }
                             </div>
                           </div>
@@ -137,16 +117,16 @@ class About extends React.Component {
                             <div className="line"/>
                             <div className="social_div">
                               {
-                                member.linkedin != '' && <img src={Images.linkedin} className="social_icon"/>
+                                member.linkedin != '' && <a href={member.linkedin}><img src={Images.linkedin} className="social_icon"/></a>
                               }
                               {
-                                member.email != '' && <img src={Images.email} className="social_icon"/>
+                                member.email != '' && <a href={member.email}><img src={Images.email} className="social_icon"/></a>
                               }
                               {
                                 member.slack != '' && <img src={Images.slack_symbol} className="social_icon"/>
                               }
                               {
-                                member.github != '' && <img src={Images.github} className="social_icon"/>
+                                member.github != '' && <a href={member.github}><img src={Images.github} className="social_icon"/></a>
                               }
                             </div>
                           </div>

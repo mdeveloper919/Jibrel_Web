@@ -83,7 +83,7 @@ export default class Pagination extends Component {
     }
 
     return (
-      <div style={slide_idx == 1 ? {position: 'absolute', top: this.state.windowWidth <= 600 ? 580 : 645, left: this.state.windowWidth/2-60, display: 'flex', flexDirection: 'row', height: 50} : null}>
+      <div style={slide_idx == 1 ? {position: 'absolute', top: this.state.windowWidth <= 700 ? 540 : 645, left: this.state.windowWidth/2-60, display: 'flex', flexDirection: 'row', height: 50} : null}>
         {children}
       </div>
     );

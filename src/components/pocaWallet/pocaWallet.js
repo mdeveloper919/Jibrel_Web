@@ -67,9 +67,9 @@ class PocaWallet extends React.Component {
     };
 
     slide1(){
-      return <div className="slide1_div">
+      return <div className="slide1_div" style={{height: this.state.windowWidth <= 700 && 580}}>
           <div className="inner_view"  style={{width: this.state.windowWidth <= 1000 ? window.innerWidth*8/10 : window.innerWidth*7/10}}>
-            <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 34 : 42}}>the <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>poca</li> wallet
+            <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 34 : 42, marginTop: this.state.windowWidth <= 700 && 110}}>the <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 400}}>poca</li> wallet
               <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 16 : 20, marginTop: 30}}>send and receive money anywhere... for <i>free...</i>
                 <div className="icon_view" style={{width: this.state.windowWidth <= 500 ? window.innerWidth*8/10 : 400}}>
                   <div className="img_view"><img src={Images.exchange}/></div>
@@ -89,10 +89,10 @@ class PocaWallet extends React.Component {
         </div>
     }
     slide2(){
-      return <div className="slide2_div">
+      return <div className="slide2_div" style={{height: this.state.windowWidth <= 700 && 580}}>
             <div className="center_inner"  style={{width: this.state.windowWidth <= 1000 ? window.innerWidth*8/10 : window.innerWidth*7/10}}>
               <div className="center_div">
-                <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 34 : 42}}>meet <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>poca...</li>
+                <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 34 : 42, marginTop: this.state.windowWidth <= 700 && 110}}>meet <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 400}}>poca...</li>
                   <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 16 : 20, marginTop: 30}}>Your gateway to <i>free</i> global e-commerce
                     <div className="icon_view" style={{width: this.state.windowWidth <= 500 ? window.innerWidth*8/10 : 400}}>
                       <div className="img_view"><img src={Images.internet}/></div>
@@ -113,9 +113,9 @@ class PocaWallet extends React.Component {
         </div>
     }
     slide3(){
-      return <div className="slide3_div">
+      return <div className="slide3_div" style={{height: this.state.windowWidth <= 700 && 580}}>
             <div className="inner_view"  style={{width: this.state.windowWidth <= 1000 ? window.innerWidth*8/10 : window.innerWidth*7/10}}>
-              <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 34 : 42}}>livin' la vida <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 300}}>poca...</li>
+              <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 34 : 42, marginTop: this.state.windowWidth <= 700 && 110}}>livin' la vida <li style={{display: 'inline-block', color: '#ffffff', fontWeight: 400}}>poca...</li>
                 <div className="title_div" style={{fontSize: this.state.windowWidth <= 1000 ? 16 : 20, marginTop: 30}}>setup and manage recurring payments / receivables
                   <div className="icon_view" style={{width: this.state.windowWidth <= 500 ? window.innerWidth*8/10 : 400}}>
                     <div className="img_view"><img src={Images.calendar}/></div>
@@ -178,7 +178,7 @@ class PocaWallet extends React.Component {
             <div className="icon_left_div">
               <li className="title_li">Store money safely and securely using the jibrel network</li>
               <li className="subtitle_li">All integrated exchanges are fully compliant with financial regulation</li>
-              <li className="desciption_li">We're helping everyone leverage the power of digital currencies without the associated risks - use KYC/AML compliant exchanges to store your fiat currency, keep track of it securely and immutably using the power of the blockchain and the jibrel network</li>
+              <li className="desciption_li">"We're helping everyone leverage the power of digital currencies without the associated risks - use KYC/AML compliant exchanges to store your fiat currency, keep track of it securely and immutably using the power of the blockchain and the jibrel network"</li>
             </div>
           </div>
           <div className="right_div">
@@ -206,7 +206,7 @@ class PocaWallet extends React.Component {
             <div className="icon_left_div">
               <li className="title_li">Hedge against digital asset volatility without going off-chain</li>
               <li className="subtitle_li">Open a money market account to invest in safer assets</li>
-              <li className="desciption_li">We're providing an ecosystem for developers and users to build their own tools and products that leverages the jibrel central bank's capabilities - users can create their own fiat to digital asset smart contracts that utilize the capabilities unlocked by storing fiat on-chain</li>
+              <li className="desciption_li">We\'re providing an ecosystem for developers and users to build their own tools and products that leverages the jibrel central bank's capabilities - users can create their own fiat to digital asset smart contracts that utilize the capabilities unlocked by storing fiat on-chain</li>
             </div>
           </div>
           <div className="right_div">

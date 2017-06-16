@@ -53,7 +53,7 @@ class FAQ extends React.Component {
             <div className="faq_normal"  style={{width: this.state.windowWidth <= 1200 ? window.innerWidth*9/10 : 1100}}>
               <h1 style={{fontSize: this.state.windowWidth <= 1000 ? 30 : 42}}>FREQUENTLY ASKED QUESTIONS (FAQ)</h1>
               <p style={{fontSize: this.state.windowWidth <= 1000 ? 16 : null}}>Commonly asked questions about the jibrel network and their respective answers</p>
-              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Did we miss something?<br/>Email us at <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>questions@jibrel.network</p></p>
+              <p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18}}>Did we miss something?<br/>Email us at <a href="mailto:questions@jibrel.network"><p style={{display: 'inline-block', fontSize: this.state.windowWidth <= 1000 ? 16 : 18, color: '#4d98ff', cursor: 'pointer'}}>questions@jibrel.network</p></a></p>
 
               <div className="box_div" style={{fontSize: this.state.windowWidth <= 1000 ? 18 : null}}>
                 ORGANIZATION

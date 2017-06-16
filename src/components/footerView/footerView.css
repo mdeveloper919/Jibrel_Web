@@ -56,14 +56,28 @@
     font-size: 18px;
   }
   .footer_div {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 100%;
+    height: 350px;
+    background-color: #e0e0e0;
+    display: table;
+  }
+  .footer_div_mobile {
+    margin-top: 40px;
+    width: 100%;
+    height: 470px;
     background-color: #e0e0e0;
   }
   .footer_view {
-    margin-top: 15px;
+    margin-top: 40px;
+    height: 300px;
     width: 60%;
-    height: 20px;
+    display: inline-block;
+  }
+  .footer_view_mobile {
+    margin-top: 40px;
+    height: 400px;
+    width: 90%;
     display: inline-block;
   }
   .footer_view li {
@@ -81,23 +95,78 @@
     display: inline-block;
   }
   .footer_icon_div {
-    width: 180px;
-    height: 40px;
-    display: inline-block;
-    cursor: pointer;
+    font-size: 15px;
     vertical-align: middle;
     justify-content: center;
-    text-align: center;
+    text-align: left;
   }
-  .footer_icon_div img {
-    width: 30px;
+
+  .logo-div {
+    display: table-cell;
+    font-size: 34px;
+    opacity: 0.4;
+    width: 40%;
+    color: #000000;
+    text-align: left;
+    line-height: 1em;
+  }
+  .logo-div-mobile {
+    font-size: 34px;
+    opacity: 0.4;
+    width: 90%;
+    height: 120px;
+    color: #000000;
+    text-align: left;
+    line-height: 1em;
+  }
+  .logo-div-mobile img {
+    width: auto;
+    height: 45px;
+    vertical-align: middle;
+  }
+  .logo-div img {
+    width: auto;
+    height: 45px;
+    vertical-align: middle;
+  }
+  .right-div {
+    width: 25%;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+  }
+  .right-div-mobile {
+    width: 40%;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+  }
+  .developers-div {
+    width: 200px;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+  }
+  .item-div {
+    opacity: 0.4;
+    margin-top: 20px;
+    height: 20px;
+    cursor: pointer;
+    line-height: 1em;
+  }
+  .item-div img {
+    width: 20px;
     height: auto;
     vertical-align: middle;
-    opacity: 0.6
+    margin-right: 12px;
   }
-  .footer_icon_div li {
-    display: inline-block;
-    vertical-align: middle;
-    color: #808080;
-    margin-left: 10px;
+  .item-link {
+    color: #000000;
+    text-decoration: none;
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import logo from '../../resources/Jibrel Logo (1).jpg';
+import logo_black from '../../resources/Jibrel Logo Black.png';
 import data from './data.js';
 import './main.css'
 
@@ -111,8 +112,8 @@ class NavContainer extends React.Component {
                             <i onClick={e=>this.handleNavClick(e)} className="fa fa-bars fa-1x" aria-hidden="true"></i>
                           )
                         }
-                        <li className="mobile-center" onClick={()=>this.logoClick()}><Link style={{textDecoration: 'none', color: '#a9a9a9'}} to="/">jibrel network</Link></li>
-                        <div className="pig-button" style={{width: 30, position: 'absolute', right: 18, top: 22}} onClick={()=>this.logoClick()}><Link to="/" onClick={() => scroll.scrollTo(950)}><img src={require('../../resources/piggy-bank.png')} style={{paddingRight: 0}}/></Link></div>
+                        <li className="mobile-center" onClick={()=>this.logoClick()}><Link style={{textDecoration: 'none', color: '#333333', }} to="/"><img src={logo_black}/></Link></li>
+                        <div className="pig-button" style={{width: 30, position: 'absolute', right: 18, top: 22}} onClick={()=>this.logoClick()}><Link to="/" onClick={() => scroll.scrollTo(550)}><img src={require('../../resources/piggy-bank.png')} style={{paddingRight: 0}}/></Link></div>
                         <ul className="nav-mobile" style={this.state.mobileNavVisible ? {backgroundColor: '#ffffff', height: window.innerHeight} : null}>
                             {this.renderMobileNav()}
                         </ul>
@@ -121,9 +122,9 @@ class NavContainer extends React.Component {
         } else {
             return <div className="nav_normal">
                         <ul>
-                            <li className="li-logo" style={{marginRight: this.state.windowWidth <= 1200 && '9%'}}><Link to="/"><img src={logo}/><li className="logo-text" onClick={()=>this.logoClick()}>jibrel<br/>network</li></Link></li>
+                            <li className="li-logo" style={{marginRight: this.state.windowWidth <= 1200 && '9%'}} onClick={()=>this.logoClick()}><Link to="/"><img src={logo}/><li className="logo-text">jibrel<br/>network</li></Link></li>
                             {this.navigationLinks()}
-                            <Link to="/" onClick={() => scroll.scrollTo(770)}><div className="pig-button" style={{marginLeft: this.state.windowWidth <= 1200 && '35'}}><img src={require('../../resources/piggy-bank.png')}/><li onClick={()=>this.logoClick()}>Fundraiser</li></div></Link>
+                            <div className="pig-button" style={{marginLeft: this.state.windowWidth <= 1200 && '35'}} onClick={()=>this.logoClick()}><Link to="/" onClick={() => scroll.scrollTo(650)}><img src={require('../../resources/piggy-bank.png')}/><li>Fundraiser</li></Link></div>
                         </ul>
                 </div>
             ;

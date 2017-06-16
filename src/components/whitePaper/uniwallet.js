@@ -1,2 +1,2 @@
-const uniwallet = 'Each asset registered with the JDB will have a CryDR issued in the form of a smart contract. CryDR smart'
+const uniwallet = 'Currency agnostic wallets can be created that allow users to freely convert between currencies and make transfers to anyone, anywhere in any currency, without the exorbitant fees usually associated with such transactions.'
 export default uniwallet
